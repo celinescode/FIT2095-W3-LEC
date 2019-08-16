@@ -8,6 +8,7 @@ app.get("/wiki/:keyword/fit2095:id", function (req,res) {
     console.log(req.url);
     console.log(req.params);
 }) // anyvalue after wiki is parameter
+//change something
 
 app.get("/report",function (req,res) {
     console.log(req.url);
@@ -16,9 +17,7 @@ app.get("/report",function (req,res) {
     console.log("name is " + req.query.name);
 });
 app.get('/time', function (req, res) {
-    let d = new Date();
-    let msg = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-    res.send(msg);
+
 });
 app.get('/date', function (req, res) {
     let d = new Date();
